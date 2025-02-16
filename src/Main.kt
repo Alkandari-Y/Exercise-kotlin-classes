@@ -1,12 +1,11 @@
 fun main() {
-    var survivalGuide = Book();
-    survivalGuide.title = "Zombie Survival Guide";
-    survivalGuide.author = "Max Brooks";
-    survivalGuide.yearPublished = 2003;
+    var survivalGuide = Book(
+        "Zombie Survival Guide",
+        "Max Brooks",
+        2003
+    );
+
+    println(survivalGuide.title)
 }
 
-class Book() {
-    var title: String = "";
-    var author: String = "";
-    var yearPublished: Int = 1990
-}
+class Book(var title: String, var author: String, var yearPublished: Int) {}
